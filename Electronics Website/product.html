@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page - Electronic Shop</title>
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- bootstrap links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- bootstrap links -->
+    <!-- fonts links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <!-- fonts links -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body class="showcart">
+
+
+
+    <!-- top navbar -->
+    <div class="top-navbar">
+        <p>WELCOME TO OUR SHOP</p>
+        <div class="icons">
+            <a href="login.html"><img src="./images/register.png" alt="" width="15px">&nbsp; Login</a>
+            <a href="register.html"><img src="./images/register.png" alt="" width="15px">&nbsp; Register</a>
+        </div>
+    </div>
+    <!-- top navbar -->
+
+    <!-- navbar -->
+    <div class="total-nav">
+        <nav class="navbar navbar-expand-lg" id="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html" id="logo"><span id="span1">E</span>Lectronic
+                    <span>Shop</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span><img src="./images/menu.png" alt="" width="30px"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="product.html">Product</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Category
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown"
+                                style="background-color: rgb(67 0 86);">
+                                <li><a class="dropdown-item" href="#">Smart Phone</a></li>
+                                <li><a class="dropdown-item" href="#">Mobile Phone</a></li>
+                                <li><a class="dropdown-item" href="#">Cameras</a></li>
+                                <li><a class="dropdown-item" href="#">Fridge</a></li>
+                                <li><a class="dropdown-item" href="#">AC</a></li>
+                                <li><a class="dropdown-item" href="#">Smart Watch</a></li>
+                                <li><a class="dropdown-item" href="#">Headphone</a></li>
+                                <li><a class="dropdown-item" href="#">Laptop</a></li>
+                                <li><a class="dropdown-item" href="#">PC Monitor</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+
+                    </ul>
+                    <div class="icon-cart">
+                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20"
+                            aria-label="Shopping Cart">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0h8m-8 0-1-4m9 4a2 2 0 1 0 0 4Zm-9-4h10l2-7H3m2 7L3 4m0 0-.792-3H1" />
+                        </svg>
+                        <span>0</span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="carTab">
+        <h1>Shopping Cart</h1>
+        <div class="listCart">
+            <div class="item">
+                <div class="itemimg">
+                    <img src="images/p6.png" alt="">
+                </div>
+                <div class="name">
+                    NAME
+                </div>
+                <div class="totalPrice">
+                    $200
+                </div>
+                <div class="quantity">
+                    <span class="minus"></span>
+                    <span>1</span>
+                    <span class="plus"></span>
+                </div>
+            </div>
+
+        </div>
+        <div class="total-price">
+            <h3>Total Price: $<span id="total-price">0</span></h3>
+        </div>
+        <div class="tabbtn">
+            <button class="close">CLOSE</button>
+            <button class="checkOut">CHECK Out</button>
+        </div>
+    </div>
+    <!-- navbar -->
+    <!-- product ```html
+    <-- product cards -->
+    <div class="container" id="product-cards">
+        <h1 class="text-center">PRODUCTS</h1>
+        <div class="row" style="margin-top: 30px;">
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="./images/pr9.png" alt="">
+                    <div class="card-body">
+                        <h3 class="text-center">Smart Watch</h3>
+                        <div class="star text-center">
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                        </div>
+                        <h2>$250 <span>
+                                <div class="icon-cart">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </div>
+                            </span></h2>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- product cards -->
+
+    <!-- footer -->
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6 footer-contact">
+                        <h3>Electronic Shop</h3>
+                        <p>
+                            Beirut <br>
+                            syria <br>
+                        </p>
+                        <strong>Phone:</strong><a id="tel-nb" href="tel:+96170191676"> +96170191676 </a><br>
+                        <strong>Email:</strong> <a id="email"
+                            href="mailto:arwaid022@gamil.com">electronicshop@.com</a><br>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="#">Terms of service</a></li>
+                            <li><a href="#">Privacy policy</a></li>
+                        </ul>
+                    </div>
+
+
+
+
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Product</h4>
+
+                        <ul>
+                            <li><a href="#">Gaming console</a></li>
+                            <li><a href="#">Computer</a></li>
+                            <li><a href="#">Gaming Laptop</a></li>
+                            <li><a href="#">Mobile Phone</a></li>
+                            <li><a href="#">Gaming Gadget</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Our Social Media</h4>
+
+                        <div class="socail-links mt-3">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="tel:+96170191676"><i class="fa-brands fa-whatsapp"></i></a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container py-4">
+            <div class="copyright">
+                &copy; Copyright <strong><span>Electronic Shop</span></strong>. All Rights Reserved
+            </div>
+
+        </div>
+    </footer>
+    <!-- footer -->
+
+    <a href="#" class="arrow"><i><img src="./images/arrow.png" alt=""></i></a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            let listProductHTML = document.querySelector('.card');
+            let listCartHTML = document.querySelector('.listCart');
+            let iconCart = document.querySelector('.icon-cart');
+            let iconCartSpan = document.querySelector('.icon-cart span');
+            let body = document.querySelector('body');
+            let closeCart = document.querySelector('.close');
+            let products = [];
+            let cart = [];
+
+
+            iconCart.addEventListener('click', () => {
+                body.classList.toggle('showCart');
+            })
+            closeCart.addEventListener('click', () => {
+                body.classList.toggle('showCart');
+            })
+
+            const addDataToHTML = () => {
+                // Make sure the products array is not empty
+                if (products.length > 0) {
+                    // Get the container where the products should be appended
+                    let productContainer = document.querySelector('#product-cards .row');
+
+                    // Loop through each product and create the card HTML
+                    products.forEach(product => {
+                        // Create a new div for each product card
+                        let newProduct = document.createElement('div');
+                        newProduct.classList.add('col-md-3', 'py-3', 'py-md-0'); // Add Bootstrap classes for layout
+
+                        // Add HTML for the new product
+                        newProduct.innerHTML = `
+                <div class="card">
+                    <img src="${product.image}" alt="${product.name}">
+                    <div class="card-body">
+                        <h3 class="text-center">${product.name}</h3>
+                        <div class="star text-center">
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                        </div>
+                        <h2>$${product.price}</h2>
+                        <div class="icon-cart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+                </div>
+            `;
+
+                        // Append the new product card to the container
+                        productContainer.appendChild(newProduct);
+
+                        // Add an event listener to the cart icon
+                        newProduct.querySelector('.icon-cart i').addEventListener('click', () => {
+                            addToCart(product.id); // Trigger addToCart with the current product's id
+                        });
+                    });
+                }
+            }
+
+
+            listProductHTML.addEventListener('click', (event) => {
+                let positionClick = event.target;
+                if (positionClick.classList.contains('addCart')) {
+                    let id_product = positionClick.parentElement.dataset.id;
+                    addToCart(id_product);
+                }
+            })
+            const addToCart = (product_id) => {
+                let positionThisProductInCart = cart.findIndex((value) => value.product_id == product_id);
+                if (cart.length <= 0) {
+                    cart = [{
+                        product_id: product_id,
+                        quantity: 1
+                    }];
+                } else if (positionThisProductInCart < 0) {
+                    cart.push({
+                        product_id: product_id,
+                        quantity: 1
+                    });
+                } else {
+                    cart[positionThisProductInCart].quantity = cart[positionThisProductInCart].quantity + 1;
+                }
+                addCartToHTML();
+                addCartToMemory();
+            }
+            const addCartToMemory = () => {
+                // Ensure this is the correct key used to store cart data
+                localStorage.setItem('cart', JSON.stringify(cart));
+                localStorage.removeItem('cart');
+            };
+
+            const addCartToHTML = () => {
+                listCartHTML.innerHTML = '';
+                let totalQuantity = 0;
+                let totalPrice = 0; // Initialize total price
+
+                if (cart.length > 0) {
+                    cart.forEach(item => {
+                        totalQuantity = totalQuantity + item.quantity;
+
+                        let newItem = document.createElement('div');
+                        newItem.classList.add('item');
+                        newItem.dataset.id = item.product_id;
+
+                        let positionProduct = products.findIndex((value) => value.id == item.product_id);
+                        let info = products[positionProduct];
+                        listCartHTML.appendChild(newItem);
+
+                        // Calculate the total price for each item
+                        let itemTotalPrice = info.price * item.quantity;
+                        totalPrice += itemTotalPrice; // Add to the overall total price
+
+                        newItem.innerHTML = `
+                <div class="image">
+                    <img src="${info.image}">
+                </div>
+                <div class="name">
+                    ${info.name}
+                </div>
+                <div class="totalPrice">$${itemTotalPrice}</div>
+                <div class="quantity">
+                    <span class="minus"><</span>
+                    <span>${item.quantity}</span>
+                    <span class="plus">></span>
+                </div>
+            `;
+                    });
+                }
+
+                // Update the total quantity and total price in the cart
+                iconCartSpan.innerText = totalQuantity;
+                document.getElementById('total-price').innerText = totalPrice.toFixed(2); // Set total price in HTML
+            }
+
+
+            listCartHTML.addEventListener('click', (event) => {
+                let positionClick = event.target;
+                if (positionClick.classList.contains('minus') || positionClick.classList.contains('plus')) {
+                    let product_id = positionClick.parentElement.parentElement.dataset.id;
+                    let type = 'minus';
+                    if (positionClick.classList.contains('plus')) {
+                        type = 'plus';
+                    }
+                    changeQuantityCart(product_id, type);
+                }
+            })
+            const changeQuantityCart = (product_id, type) => {
+                let positionItemInCart = cart.findIndex((value) => value.product_id == product_id);
+                if (positionItemInCart >= 0) {
+                    let info = cart[positionItemInCart];
+                    switch (type) {
+                        case 'plus':
+                            cart[positionItemInCart].quantity = cart[positionItemInCart].quantity + 1;
+                            break;
+
+                        default:
+                            let changeQuantity = cart[positionItemInCart].quantity - 1;
+                            if (changeQuantity > 0) {
+                                cart[positionItemInCart].quantity = changeQuantity;
+                            } else {
+                                cart.splice(positionItemInCart, 1);
+                            }
+                            break;
+                    }
+                }
+                addCartToHTML();
+                addCartToMemory();
+            }
+
+            const initApp = () => {
+                // Initialize cart as empty if no data exists in localStorage
+                if (localStorage.getItem('cart')) {
+                    cart = JSON.parse(localStorage.getItem('cart'));
+                } else {
+                    cart = []; // If no cart in localStorage, start with an empty cart
+                }
+
+                // Fetch the product data and add it to HTML
+                fetch('products.json')
+                    .then(response => response.json())
+                    .then(data => {
+                        products = data;
+                        addDataToHTML();
+
+                        // Update the cart UI
+                        addCartToHTML();
+                    });
+            };
+            initApp();
+        });
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>

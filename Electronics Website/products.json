@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "name": " Iphone 13 pro",
+        "price": 1000,
+        "image": "./images/p6.png"
+    },
+    {
+        "id": 2,
+        "name": " Airpods",
+        "price": 100,
+        "image": "./images/a1.png"
+    },
+    {
+        "id": 3,
+        "name": " Laptop",
+        "price": 200,
+        "image": "./images/laptop2.png"
+    },
+    {
+        "id": 4,
+        "name": " Ipad",
+        "price": 300,
+        "image": "./images/t1.png"
+    },
+    {
+        "id": 5,
+        "name": " Smart Watch",
+        "price": 50.60,
+        "image": "./images/w1.png"
+    },
+    {
+        "id": 6,
+        "name": " PC Monitor",
+        "price": 600,
+        "image": "./images/pcm1.png"
+    },
+    {
+        "id": 7,
+        "name": " iPhone X",
+        "price": 500,
+        "image": "./images/phone1.png"
+    },
+    {
+        "id": 8,
+        "name": " Headphone",
+        "price": 60,
+        "image": "./images/h1.png"
+    },
+    {
+        "id": 9,
+        "name": " Washion Machine",
+        "price": 100.50,
+        "image": "./images/pr1.png"
+    },
+    {
+        "id": 10,
+        "name": " AC",
+        "price": 500,
+        "image": "./images/pr2.png"
+    },
+    {
+        "id": 11,
+        "name": " Microwave Oven",
+        "price": 200.30,
+        "image": "./images/pr3.png"
+    },
+    {
+        "id": 12,
+        "name": " Fridge",
+        "price": 300,
+        "image": "./images/pr4.png"
+    },
+    {
+        "id": 13,
+        "name": " Ground Fan",
+        "price": 50,
+        "image": "./images/pr5.png"
+    },
+    {
+        "id": 14,
+        "name": " Joystics",
+        "price": 70,
+        "image": "./images/pr12.png"
+    },
+    {
+        "id": 15,
+        "name": " Power Bank",
+        "price": 30,
+        "image": "./images/pr11.png"
+    }
+]
